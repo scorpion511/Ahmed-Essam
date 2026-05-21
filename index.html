@@ -1,47 +1,129 @@
-<!-- Copyright (C) 2023-2025 anonymous
-
-This file is part of PSFree.
-
-PSFree is free software: you can redistribute it and/or modify
-it under the terms of the GNU Affero General Public License as
-published by the Free Software Foundation, either version 3 of the
-License, or (at your option) any later version.
-
-PSFree is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU Affero General Public License for more details.
-
-You should have received a copy of the GNU Affero General Public License
-along with this program.  If not, see <https://www.gnu.org/licenses/>.
--->
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
         <meta charset='utf-8'>
-        <title>PSFree-Lapse Exploit For PS4 9.00</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WELCOME TO SCORPION HACK</title>
         <style>
             @font-face {
                 font-family: 'logging';
                 src: url('fonts/LiberationMono-Regular.ttf');
             }
+            
+            body {
+                margin: 0;
+                padding: 0;
+                min-height: 100vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                background-image: url('YOUR_IMAGE_URL_HERE');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                color: #ffffff;
+                font-family: Arial, sans-serif;
+            }
+
+            #main-content {
+                text-align: center;
+                margin-top: 10vh;
+                width: 100%;
+            }
+
+            /* --- Super Fancy Glow Animation --- */
+            @keyframes neonGlow {
+                0% {
+                    color: #ff0055;
+                    text-shadow: 0 0 10px #ff0055, 0 0 20px #ff0055, 0 0 40px #ff0055;
+                }
+                33% {
+                    color: #00ffcc;
+                    text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc, 0 0 40px #00ffcc;
+                }
+                66% {
+                    color: #9b51e0;
+                    text-shadow: 0 0 10px #9b51e0, 0 0 20px #9b51e0, 0 0 40px #9b51e0;
+                }
+                100% {
+                    color: #ff0055;
+                    text-shadow: 0 0 10px #ff0055, 0 0 20px #ff0055, 0 0 40px #ff0055;
+                }
+            }
+
+            /* Glowing Headline */
+            .glow-headline {
+                font-size: 3rem;
+                font-weight: 900;
+                letter-spacing: 3px;
+                margin-bottom: 5px;
+                animation: neonGlow 6s infinite ease-in-out;
+            }
+
+            /* Glowing Footer Name */
+            .glow-footer {
+                font-size: 1.2rem;
+                font-weight: bold;
+                letter-spacing: 2px;
+                animation: neonGlow 6s infinite ease-in-out;
+                animation-delay: -3s; /* Desynchronizes the footer color cycle from the header */
+            }
+
             #console {
                 font-family: 'logging';
+                background: rgba(0, 0, 0, 0.75);
+                padding: 15px;
+                border-radius: 5px;
+                display: inline-block;
+                max-width: 80%;
+                text-align: left;
+                box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            }
+
+            footer {
+                margin-bottom: 5vh;
+                text-align: center;
+            }
+            
+            a {
+                color: #00ffcc;
+                text-decoration: none;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+            h2 {
+                color: #e0e0e0;
+                font-size: 1.2rem;
+                font-weight: normal;
+                margin-top: 0;
             }
         </style>
         <script>
-        if (window.applicationCache.status=='0')
+        if (window.applicationCache.status === 0 || window.applicationCache.status === window.applicationCache.UNCACHED)
         {
           window.location.replace("cache.html");
         }
         </script>
     </head>
     <body>
-        PSFree: A PS4/PS5 Exploit Chain
-        <br>
-        <br>
-        See <a href='./about.html' data-jslicense='1'>JavaScript license information</a> for the
-        source code and license.<br>
-        <pre id='console'></pre>
+
+        <div id="main-content">
+            <!-- Animated Title -->
+            <h1 class="glow-headline">WELCOME TO SCORPION HACK</h1>
+            <h2>PSFree: A PS4/PS5 Exploit Chain</h2>
+            
+            <p>See <a href='./about.html' data-jslicense='1'>JavaScript license information</a> for the source code and license.</p>
+            <pre id='console'></pre>
+        </div>
+
+        <!-- Animated Footer -->
+        <footer>
+            <div class="glow-footer">DESIGNED and Compiled By Ahmed Essam</div>
+        </footer>
+
     </body>
     <script type='module' src='./alert.mjs'></script>
 </html>
