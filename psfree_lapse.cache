@@ -1,5 +1,5 @@
 CACHE MANIFEST 
-# PSFree-Lapse (GH v2.4b18.10 Update Live)
+# PSFree-Lapse (Official GoldHEN v2.4b18.10 Pure Binary Update)
 
 about.html
 alert.mjs
@@ -10,22 +10,21 @@ lapse.mjs
 aio_patches.bin
 goldhen.bin
 psfree.mjs
-fonts\LiberationMono-Regular.ttf
-kpatch\900.elf
-module\chain.mjs
-module\constants.mjs
-module\int64.mjs
-module\mem.mjs
-module\memtools.mjs
-module\offset.mjs
-module\rw.mjs
-module\utils.mjs
-module\view.mjs
-rop\900.mjs
+fonts/LiberationMono-Regular.ttf
+kpatch/900.elf
+module/chain.mjs
+module/constants.mjs
+module/int64.mjs
+module/mem.mjs
+module/memtools.mjs
+module/offset.mjs
+module/rw.mjs
+module/utils.mjs
+module/view.mjs
+rop/900.mjs
 
 NETWORK:
 *
 
 SETTINGS:
 prefer-online:
-
